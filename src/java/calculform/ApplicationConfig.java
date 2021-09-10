@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  *
  * @author adams
  */
-@javax.ws.rs.ApplicationPath("webresources")
+@javax.ws.rs.ApplicationPath("areaofplanesharpes")
 public class ApplicationConfig extends Application {
 
     @Override

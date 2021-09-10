@@ -33,21 +33,47 @@ public class CalculForm {
 
     /**
      * Retrieves representation of an instance of calculform.CalculForm
+     *
      * @return an instance of java.lang.String
      */
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public String getXml() {
+    @Path("affichersharpeslist")
+    @Produces(javax.ws.rs.core.MediaType.APPLICATION_JSON)
+    public String sharpesList() {
         //TODO return proper representation object
-        throw new UnsupportedOperationException();
+        return "[{\n"
+                + "		\"name\": \"Circle\",\n"
+                + "		\"NumberofParam\": 1\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Rectangle\",\n"
+                + "		\"NumberofParam\": 2\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Trapezoid\",\n"
+                + "		\"NumberofParam\": 3\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Elipse\",\n"
+                + "		\"NumberofParam\": 2\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Triangle\",\n"
+                + "		\"NumberofParam\": 2\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Square\",\n"
+                + "		\"NumberofParam\": 1\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Parallelogram\",\n"
+                + "		\"NumberofParam\": 2\n"
+                + "	},\n"
+                + "	{\n"
+                + "		\"name\": \"Sector\",\n"
+                + "		\"NumberofParam\": 2\n"
+                + "	}\n"
+                + "]";
     }
 
-    /**
-     * PUT method for updating or creating an instance of CalculForm
-     * @param content representation for the resource
-     */
-    @PUT
-    @Consumes(MediaType.APPLICATION_XML)
-    public void putXml(String content) {
-    }
 }
